@@ -49,9 +49,9 @@ class Maze:
         x2 = x1 + self._cell_size_x
         y2 = y1 + self._cell_size_y
         self._cells[i][j].draw(x1, y1, x2, y2)
-        self._animate(.00001)
+        self._animate(.0000001)
 
-    def _animate(self, sleep=.02):
+    def _animate(self, sleep=.001):
         if self._win is None:
             return
         self._win.redraw()

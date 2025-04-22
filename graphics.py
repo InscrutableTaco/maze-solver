@@ -25,3 +25,7 @@ class Window:
 
     def close(self):
         self.__running = False
+
+        # Add to graphics.py Window class
+    def bind_key(self, key, callback):
+        self.__root.bind(key, callback)
